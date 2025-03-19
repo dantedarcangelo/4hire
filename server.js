@@ -1,6 +1,10 @@
 const express = require('express');
 const path = require('path');
 require('dotenv').config();
+const connectDB = require('./src/models/db');
+
+// Connect to MongoDB
+connectDB();
 
 // Create Express app
 const app = express();
